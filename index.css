@@ -5,6 +5,77 @@
 }
 
 body {
-    background-color: #251607;
-    color: #ffd8af; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.body {
+
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.headLine {
+    width: 80%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 2px solid red;
+    border-radius: 1rem; 
+
+    height: 90%;
+    width: 40%;
+}
+
+.picture {
+    height: 40%;
+    width: 90%;
+    object-fit: cover;
+
+    margin: 10px 0;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.scene {
+    height: 30%;
+    width: 90%;
+
+    overflow: auto;
+}
+
+.button-container {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-container button {
+    padding: 20px;
+    width: 100px;
 }
