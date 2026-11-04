@@ -113,13 +113,14 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.462);
     background-color: #7d4e57;
 
-    
-
+    transition: transform 0.3s ease;
 }
 
 .button-container button:hover {
     background-color: #7d4e57b4;
     border-radius: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (max-width: 750px) {
