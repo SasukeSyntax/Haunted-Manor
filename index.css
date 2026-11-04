@@ -135,6 +135,8 @@ body {
     .headLine {
         width: 100%;
         height: 20vh;
+
+        z-index: 99999;
     }
 
     .card-container {
