@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitchen</title>
 
-    <link rel="stylesheet" href="whisper.css">
+    <title>The Manor - Attic</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Creepster&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     
 
     <div class="body">
 
+        <div class="top-bar">
+            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
+            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+        </div>
+
         <div class="headLine">
             <h1 class="line">
-                The Kitchen
+                The Dusty Attic
             </h1>
         </div>
 
@@ -29,29 +32,44 @@
             </div>
 
             <div class="scene">
-                <p>
-                    You follow the whispers, while roaming you see a grey scaled kitchen, while examining you find spotches of blood all around and a knife that seemed like it was used to cut someone's throat, <br> <br>
-                    
-                    suddenly you hear a loud "BANNG" and "SHUTT!" near the locked manor main door <br>
-                    ...before you were alone in this manor, now you arn't <br> <br>
-
-                    what will you do ?
+                <p id="story-text">
+                    You climb the creaking stairs toward the whispers. In the center of the attic, an old silver gramophone spins by itself. <br><br>
+                    A pale weeping spirit rises from the shadows. The windows begin to shake violently! <br><br>
+                    <span class="secret">FINAL SAFE DIGIT: 2</span>
                 </p>
             </div>
 
-             <div class="button-container">
-                <a href="">
-                    <button>Hide in a cabinet</button>
+             <div class="button-container" id="attic-buttons">
+                <a href="../endings/bad-ending.html">
+                    <button>Smash Gramophone</button>
                 </a>
 
-                <a href="">
-                    <button>Sneek to a different room</button>
+                <a href="#" onclick="rightChoice()">
+                    <button>Ring Silver Bell</button>
                 </a>
             </div>
         </div>
 
-       
     </div>
+
+    <script>
+        function toggleEmf() {
+            document.body.classList.toggle("emf");
+        }
+
+        function rightChoice() {
+            document.getElementById("story-text").innerHTML = "BANSHEE BANISHED! <br><br> The Silver Bell disrupts her scream! As she fades into mist, two hidden doors creak open behind the gramophone. <br><br> <span class='secret'>CLUE: THE 4TH DIGIT IS IN THE LIBRARY</span>";
+
+            document.getElementById("attic-buttons").innerHTML = `
+                <a href="../second-choice/library.html">
+                    <button>Enter The Library</button>
+                </a>
+                <a href="../second-choice/hallway.html">
+                    <button>Enter Dark Hallway</button>
+                </a>
+            `;
+        }
+    </script>
 
 </body>
 </html>

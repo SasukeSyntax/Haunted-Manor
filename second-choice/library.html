@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Manor - Library</title>
+
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="body">
+
+        <div class="top-bar">
+            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
+            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+        </div>
+
+        <div class="headLine">
+            <h1 class="line">Candlelit Library</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="picture">
+                <img src="../spooky.jpg" alt="">
+            </div>
+
+            <div class="scene">
+                <p id="lib-text">
+                    Thousands of old books tower into the darkness. A translucent scholar floats near the top ladder, muttering angrily about a missing chapter. <br> <br>
+                    Heavy books begin levitaiing around your head! <br> <br>
+                    <span class="secret">FINAL DIGIT: 2</span>
+                </p>
+            </div>
+
+            <div class="button-container" id="lib-buttons">
+                <a href="../endings/bad-ending.html">
+                    <button>Dog-Ear A Book Page</button>
+                </a>
+
+                <a href="#" onclick="beatArchivist()">
+                    <button>Show Overdue Slip</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        function toggleEmf() {
+            document.body.classList.toggle("emf");
+        }
+
+        function beatArchivist() {
+            document.getElementById("lib-text").innerHTML = "THE ARCHIVIST GASPS! <br><br> Terrified of the overdue library fine, he vanishes into the bookshelves! A secret passage opens behind the desk. <br><br> <span class='secret'>FINAL BASEMENT DIGIT: 2 (FULL CODE: 3142)</span>";
+
+            document.getElementById("lib-buttons").innerHTML = `
+                <a href="../third-choice/conservatory.html">
+                    <button>Enter Conservatory</button>
+                </a>
+                <a href="../first-choice/basement.html">
+                    <button>Run To Basement</button>
+                </a>
+            `;
+        }
+    </script>
+    
+</body>
+</html>
