@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-color: rgb(4, 5, 24);
+
+    color: whitesmoke;
+}
+
+.body {
+
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 30px 30px 30px;
+}
+
+.headLine {
+    width: 80%;
+    height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-bottom: 20pxz;
+
+  color: red;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 2px solid #1a212f;
+    border-radius: 5px; 
+
+    height: 90%;
+    width: 30%;
+
+    background-color: rgb(4, 19, 41);
+
+    margin: 10px 0;
+}
+
+.picture {
+    height: 40%;
+    width: 90%;
+    object-fit: cover;
+
+    margin: 10px 0;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.scene {
+    height: 30% auto;
+    width: 90%;
+
+    overflow: auto;
+    font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-container {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.button-container a {
+    width: 45%;
+    height: 80%;
+}
+
+.button-container button {
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+
+    margin-top: 20px;
+/* 
+    font-size: 15px; */
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.462);
+    background-color: #8c68169d;
+    color: whitesmoke;
+
+
+    transition: transform 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #8c6916;
+    border-radius: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+
+
+    .body {
+        padding: 20px;
+    }
+
+    .headLine {
+        width: 100%;
+        height: 20vh;
+
+        z-index: 99999;
+    }
+
+    .card-container {
+        width: 100%;
+        height: 80%;
+    }
+
+    .button-container button {
+        padding: 7px;
+        color: whitesmoke;
+    }
+
+}
+
+.button-container p {
+    font-size: 2rem;
+    font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  color: red;
+  text-align: center;
+
+}
