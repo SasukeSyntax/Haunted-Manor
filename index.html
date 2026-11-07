@@ -12,9 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Creepster&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 <body>
-     
 
     <div class="body">
+
+        <div class="top-bar">
+            <button class="top-btn" onclick="openBook()">Open Bestiary</button>
+            <p>SANITY: <span id="sanity">100</span>%</p>
+            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+        </div>
 
         <div class="headLine">
             <h1 class="line">
@@ -33,11 +38,12 @@
                     A chaotic bundle of kinetic energy that feeds on household tension. Known for stacking kitchen chairs on the ceiling, hiding your left sock, and slamming doors at 3:14 AM. <br> <br>
                     You hear whisper from the top most floor. <br> <br>
                     You have been imprisoned in this haunted manor,<br>
-                    what will you do?
+                    what will you do? <br> <br>
+                    <span class="secret">CLUE: FIRST THREE DIGITS ARE 314</span>
                 </p>
             </div>
 
-             <div class="button-container">
+            <div class="button-container">
                 <a href="first-choice/basement.html">
                     <button>Open The Basement Door</button>
                 </a>
@@ -48,8 +54,74 @@
             </div>
         </div>
 
-       
     </div>
+
+    <div class="bestiary-popup" id="book">
+        <h2 style="font-family: 'Nosifer', sans-serif;">GHOST BESTIARY</h2>
+        <div class="cards-row">
+
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <p>CLASS IV</p>
+                        <h3>POLTERGEIST</h3>
+                        <p>Slams doors at 3:14 AM and throws chairs.</p>
+                    </div>
+                    <div class="flip-back">
+                        <h3>WEAKNESS</h3>
+                        <p>IRON & ROCK SALT</p>
+                        <p>SPOOK: 70%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <p>CLASS V</p>
+                        <h3>BANSHEE</h3>
+                        <p>Weeps near the attic gramophone.</p>
+                    </div>
+                    <div class="flip-back">
+                        <h3>WEAKNESS</h3>
+                        <p>SILVER BELL</p>
+                        <p>SPOOK: 95%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <p>CLASS II</p>
+                        <h3>ARCHIVIST</h3>
+                        <p>Haunts the dusty library shelves.</p>
+                    </div>
+                    <div class="flip-back">
+                        <h3>WEAKNESS</h3>
+                        <p>OVERDUE SLIP</p>
+                        <p>SPOOK: 40%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="top-btn" onclick="closeBook()">Close Bestiary</button>
+    </div>
+
+    <script>
+        function toggleEmf() {
+            document.body.classList.toggle("emf");
+        }
+
+        function openBook() {
+            document.getElementById("book").style.display = "flex";
+        }
+
+        function closeBook() {
+            document.getElementById("book").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
