@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   font-style: normal;
 
-  margin-bottom: 20pxz;
+  margin-bottom: 20px;
 }
 
 .card-container {
@@ -120,7 +120,7 @@ body {
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 0.208);
     background-color: #7d4e57;
-    color: whitesmokez;
+    color: whitesmoke;
 
     transition: transform 0.3s ease;
 }
