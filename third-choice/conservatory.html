@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Manor - Conservatory</title>
+
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="body">
+
+        <div class="top-bar">
+            <a href="../index.css"><button class="top-btn">Back to Foyer</button></a>
+            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+        </div>
+
+        <div class="headLine">
+            <h1 class="line">The Conservatory</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="picture">
+                <img src="../spooky.jpg" alt="">
+            </div>
+
+            <div class="scene">
+                <p id="con-text">
+                    Rain pours through the broken glass roof, flooding the overgrown floor. A pale blue lantern floats over the deep water, calling your name in your best friend's voice. <br> <br>
+                </p>
+            </div>
+
+            <div class="button-container" id="con-buttons">
+                <a href="../ending/bad-ending.html">
+                    <button>Follow The Lantern</button>
+                </a>
+
+                <a href="#" onclick="beatWisp()">
+                    <button>Turn Coat Inside Out</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleEmf() {
+            document.body.classList.toggle("emf");
+        }
+
+        function beatWisp() {
+            document.getElementById("con-text").innerHTML = "ILLUSION BROKEN! <br><br> Turning your coat inside out breaks the Will-o'-Wisp's spell! The water drains, revealing a stone chute leading straight to the Basement keypad, and a journal note: <br><br> 'Combine 314 from the Foyer with 2 from the Library.'";
+
+            document.getElementById("con-buttons").innerHTML = `
+                <a href="../first-choice/basement.html">
+                    <button>Take Chute To Basement</button>
+                </a>
+                <a href="../second-choice/library.html">
+                    <button>Back To Library</button>
+                </a>
+            `;
+        }
+    </script>
+</body>
+</html>

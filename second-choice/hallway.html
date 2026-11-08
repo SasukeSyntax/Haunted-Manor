@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>The Manor - Hallway</title>
+
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nosifer&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <div class="body">
+
+        <div class="top-bar">
+            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
+            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+        </div>
+
+        <div class="headLine">
+            <h1 class="line">Portrait Hallway</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="picture">
+                <img src="../spooky.jpg" alt="">
+            </div>
+
+            <div class="scene">
+                <p id="hall-text">
+                    The temperature drops by 10 degrees. At the end of the corridor stands a pitch-black silhouette taller than the doorframe. <br><br>
+                    Every time you blink, it steps closer. <br><br>
+                    <span class="secret">MAY LIGHT SHINE UPON YOU</span>
+                </p>
+            </div>
+
+            <div class="button-container">
+                <a href="../ending/bad-ending.html">
+                    <button>Turn and Spirit Away</button>
+                </a>
+
+                <a href="../third-choice/conservatory.html">
+                    <button>Shine UV & Stare</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleEmf() {
+            document.body.classList.toggle("emf");
+        }
+    </script>
+
 </body>
 </html>

@@ -308,5 +308,9 @@ body.emf .secret {
         color: whitesmoke;
     }
 
+    .top-bar {
+        width: 100%;
+    }
+
 }
 
