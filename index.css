@@ -52,7 +52,7 @@ body {
     border: 2px solid #3641561d;
     border-radius: 5px; 
 
-    height: 90%;
+    height: 80%;
     width: 30%;
 
     background-color: #212d40;
@@ -63,16 +63,20 @@ body {
 .picture {
     height: 40%;
     width: 90%;
-    object-fit: cover;
-
     margin: 10px 0;
+    border-radius: 5px;
 }
 
 .picture img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+
     border-radius: 5px;
 }
+
+
 
 .scene {
     height: 30% auto;
@@ -363,4 +367,3 @@ body.emf .secret {
     }
 
 }
-

@@ -1,0 +1,11 @@
+body { 
+    background-color: #080404; 
+}
+
+.body .card-container { 
+    background-color: #170b0b; 
+}
+
+.body .button-container button { 
+    background-color: #5c1d1d; 
+}

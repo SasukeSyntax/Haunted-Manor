@@ -1,0 +1,15 @@
+body { 
+    background-color: #08090c; 
+}
+
+.body .card-container { 
+    background-color: #12161f; 
+}
+
+.body .button-container button { 
+    background-color: #2b303c; 
+}
+
+.body .button-container button:hover { 
+    background-color: #444c5e; 
+}
