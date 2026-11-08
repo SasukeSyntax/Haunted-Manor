@@ -16,9 +16,9 @@
     <div class="body">
 
         <div class="top-bar">
-            <button class="top-btn" onclick="openBook()">Open Bestiary</button>
+            <button class="top-btn from-left" onclick="openBook()">Open Bestiary</button>
             <p>SANITY: <span id="sanity">100</span>%</p>
-            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+            <button class="top-btn from-right" onclick="toggleEmf()">EMF Vision</button>
         </div>
 
         <div class="headLine">
@@ -29,14 +29,16 @@
 
         <div class="card-container">
 
-            <div class="picture">
+            <div class="picture from-right">
                 <img src="spooky.jpg" alt="">
             </div>
 
-            <div class="scene">
+            <div class="scene from-left">
                 <p>
                     A chaotic bundle of kinetic energy that feeds on household tension. Known for stacking kitchen chairs on the ceiling, hiding your left sock, and slamming doors at 3:14 AM. <br> <br>
+
                     You hear whisper from the top most floor. <br> <br>
+                    
                     You have been imprisoned in this haunted manor,<br>
                     what will you do? <br> <br>
                     <span class="secret">CLUE: FIRST TWO DIGITS ARE 31</span>
@@ -122,6 +124,8 @@
             document.getElementById("book").style.display = "none";
         }
     </script>
+
+    <script src="animation.js"></script>
 
 </body>
 </html>

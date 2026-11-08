@@ -14,8 +14,8 @@
     <div class="body">
 
         <div class="top-bar">
-            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
-            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+            <a href="../index.html"><button class="top-btn from-left">Back to Foyer</button></a>
+            <button class="top-btn from-right" onclick="toggleEmf()">EMF Vision</button>
         </div>
 
         <div class="headLine">
@@ -23,11 +23,11 @@
         </div>
 
         <div class="card-container">
-            <div class="picture">
+            <div class="picture from-right">
                 <img src="../spooky.jpg" alt="">
             </div>
 
-            <div class="scene">
+            <div class="scene from-left">
                 <p id="hall-text">
                     The temperature drops by 10 degrees. At the end of the corridor stands a pitch-black silhouette taller than the doorframe. <br><br>
                     Every time you blink, it steps closer. <br><br>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="button-container">
-                <a href="../ending/bad-ending.html">
+                <a href="../endings/bad-ending.html">
                     <button>Turn and Spirit Away</button>
                 </a>
 
@@ -53,6 +53,8 @@
             document.body.classList.toggle("emf");
         }
     </script>
+
+    <script src="../animation.js"></script>
 
 </body>
 </html>

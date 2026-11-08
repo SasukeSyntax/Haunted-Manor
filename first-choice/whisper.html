@@ -15,8 +15,8 @@
     <div class="body">
 
         <div class="top-bar">
-            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
-            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+            <a href="../index.html"><button class="top-btn from-left">Back to Foyer</button></a>
+            <button class="top-btn from-right" onclick="toggleEmf()">EMF Vision</button>
         </div>
 
         <div class="headLine">
@@ -27,11 +27,11 @@
 
         <div class="card-container">
 
-            <div class="picture">
+            <div class="picture from-right">
                 <img src="kitchen.jpg" alt="">
             </div>
 
-            <div class="scene">
+            <div class="scene from-left">
                 <p id="story-text">
                     You climb the creaking stairs toward the whispers. In the center of the attic, an old silver gramophone spins by itself. <br><br>
                     A pale weeping spirit rises from the shadows. The windows begin to shake violently! <br><br>
@@ -70,6 +70,8 @@
             `;
         }
     </script>
+
+    <script src="../animation.js"></script>
 
 </body>
 </html>

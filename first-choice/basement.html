@@ -14,8 +14,8 @@
     <div class="body">
 
         <div class="top-bar">
-            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
-            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+            <a href="../index.html"><button class="top-btn from-left">Back to Foyer</button></a>
+            <button class="top-btn from-right" onclick="toggleEmf()">EMF Vision</button>
         </div>
 
         <div class="headLine">
@@ -26,11 +26,11 @@
 
         <div class="card-container">
 
-            <div class="picture">
+            <div class="picture from-right">
                 <img src="basement.jpg" alt="">
             </div>
 
-            <div class="scene">
+            <div class="scene from-left">
                 <p id="base-text">
                     The heavy iron basement door is locked with a 4-digit keypad. <br><br>
                     A scratched note says: "Combine the Poltergeist hour with the secret attic number."
@@ -70,6 +70,8 @@
             }
         }
     </script>
+
+    <script src="../animation.js"></script>
     
 </body>
 </html>

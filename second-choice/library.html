@@ -13,8 +13,8 @@
     <div class="body">
 
         <div class="top-bar">
-            <a href="../index.html"><button class="top-btn">Back to Foyer</button></a>
-            <button class="top-btn" onclick="toggleEmf()">EMF Vision</button>
+            <a href="../index.html"><button class="top-btn from-left">Back to Foyer</button></a>
+            <button class="top-btn from-right" onclick="toggleEmf()">EMF Vision</button>
         </div>
 
         <div class="headLine">
@@ -22,15 +22,15 @@
         </div>
 
         <div class="card-container">
-            <div class="picture">
+            <div class="picture from-right">
                 <img src="../spooky.jpg" alt="">
             </div>
 
-            <div class="scene">
+            <div class="scene from-left">
                 <p id="lib-text">
                     Thousands of old books tower into the darkness. A translucent scholar floats near the top ladder, muttering angrily about a missing chapter. <br> <br>
                     Heavy books begin levitaiing around your head! <br> <br>
-                    <span class="secret">FINAL DIGIT: 2</span>
+                    <span class="secret">FINAL DIGIT: 4</span>
                 </p>
             </div>
 
@@ -54,7 +54,7 @@
         }
 
         function beatArchivist() {
-            document.getElementById("lib-text").innerHTML = "THE ARCHIVIST GASPS! <br><br> Terrified of the overdue library fine, he vanishes into the bookshelves! A secret passage opens behind the desk. <br><br> <span class='secret'>FINAL BASEMENT DIGIT: 2 (FULL CODE: 3142)</span>";
+            document.getElementById("lib-text").innerHTML = "THE ARCHIVIST GASPS! <br><br> Terrified of the overdue library fine, he vanishes into the bookshelves! A secret passage opens behind the desk. <br><br> <span class='secret'>FINAL BASEMENT DIGIT: 2</span>";
 
             document.getElementById("lib-buttons").innerHTML = `
                 <a href="../third-choice/conservatory.html">
@@ -66,6 +66,8 @@
             `;
         }
     </script>
+
+    <script src="../animation.js"></script>
     
 </body>
 </html>
